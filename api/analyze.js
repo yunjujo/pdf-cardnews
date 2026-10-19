@@ -4,7 +4,7 @@
 
 const crypto = require('crypto');
 
-const MODEL = process.env.GEMINI_MODEL || 'gemini-3.8-flash';
+const MODEL = process.env.GEMINI_MODEL || 'gemini-3.5-flash-lite';
 const MAX_PDF_BYTES = 4 * 1024 * 1024; // Vercel 요청 본문 한도(4.5MB)보다 작게
 const RETRY_STATUS = [429, 500, 503];
 
